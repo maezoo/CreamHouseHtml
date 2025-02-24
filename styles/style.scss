@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 
 @import "./reset.scss";
 @import "./header.scss";
@@ -11,7 +11,6 @@
 @import "./spc_now.scss";
 @import "./career_support.scss";
 @import "./media.scss";
-
 
 * {
   box-sizing: border-box;
@@ -31,10 +30,14 @@ a {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "Noto Sans KR";
   position: relative;
   width: 100vw;
   overflow-x: hidden;
+
+  // font-optical-sizing: auto;
+  // font-weight: <weight>;
+  // font-style: normal;
 }
 
 .go_top {
