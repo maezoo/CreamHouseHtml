@@ -1,0 +1,222 @@
+@import "./color.scss";
+
+footer {
+  padding: 43px 55px 43px 40px;
+  background-color: $light-gray;
+}
+
+.footer-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+
+  .info-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+
+    .logo {
+      img {
+        width: 75px;
+      }
+    }
+  }
+
+  .info-2 {
+
+    .address {
+      color: $font-gray;
+      font-size: 12px;
+
+      font-weight: 500;
+      display: inline-block;
+      margin-bottom: 7px;
+    }
+
+    .privacy {
+      width: 270px;
+      font-weight: 700;
+      font-size: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 15px;
+      row-gap: 7px;
+
+
+      li::after {
+        content: "";
+        width: 1px;
+        height: 10px;
+        background-color: #a0a0a0;
+        position: absolute;
+        margin: 0px 7px 0px;
+      }
+
+      .last-privacy::after {
+        content: none;
+      }
+    }
+  }
+
+  .footer_menu {
+    display: flex;
+    gap: 52px;
+
+    .footer_lnb {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+
+      li {
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      li:nth-child(1) {
+        padding-bottom: 8px;
+      }
+
+      li:not(:nth-child(1)) {
+
+        font-weight: 500;
+        font-size: 13px;
+        color: $font-gray;
+      }
+    }
+  }
+}
+
+.footer-bottm {
+  display: flex;
+  justify-content: space-between;
+
+  .family {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .fam_box {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+
+      p {
+        font-weight: 700;
+        font-size: clamp(1.2rem, 1.015vw, 1.3rem);
+      }
+
+      .select {
+        background: $white;
+        border-radius: 50%;
+        width: 27px;
+        height: 27px;
+        position: relative;
+        cursor: pointer;
+
+        span {
+          background: black;
+          position: absolute;
+        }
+
+        .hori_rod {
+          width: 10px;
+          height: 2px;
+          top: 47%;
+          left: 34%;
+        }
+
+        .ver_rod {
+          width: 2px;
+          height: 10px;
+          top: 33%;
+          left: 48%;
+        }
+
+        .select_wrap {
+          visibility: hidden;
+          position: absolute;
+          bottom: 33px;
+          width: 165px;
+          height: 115px;
+          background-color: white;
+          border: solid 1px #e9e9e9;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+
+          .scrollBar {
+            color: $font-gray;
+            z-index: 99;
+            bottom: 17px;
+            height: 95px;
+            width: 158px;
+            overflow-y: auto;
+
+            li {
+              font-size: 13px;
+              font-weight: 500;
+              padding: 11px 0 11px 20px;
+            }
+          }
+
+          .scrollBar::-webkit-scrollbar {
+            background-color: white;
+            width: 5px;
+          }
+
+          .scrollBar::-webkit-scrollbar-thumb {
+            background-color: $gray;
+            height: 40px;
+            border-radius: 10px;
+          }
+        }
+
+        .select_wrap.show {
+          visibility: visible;
+        }
+      }
+    }
+
+    .copy {
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .sns_icon {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+
+    li:nth-child(-n+3) {
+      img {
+        width: 48px;
+        opacity: 1;
+      }
+
+      &:hover img {
+        transition: opacity .5s ease-in-out;
+        opacity: 0;
+      }
+    }
+
+    li:nth-child(1):hover {
+      background: url(/images/f_facebook_hover.svg) no-repeat;
+    }
+
+    li:nth-child(2):hover {
+      background: url(/images/f_instagram_hover.svg) no-repeat;
+    }
+
+    li:nth-child(3):hover {
+      background: url(/images/f_youtube_hover.svg) no-repeat;
+    }
+  }
+}

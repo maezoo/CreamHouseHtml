@@ -1,0 +1,310 @@
+@media (max-width: 1024px) {
+
+  body {
+    .go_top {
+      width: 40px;
+      height: 40px;
+      bottom: 15px;
+      right: 1.5rem;
+
+      a {
+        background-size: 12px 8px;
+      }
+    }
+  }
+
+  header {
+    height: 50px;
+    padding: 0 15px 0;
+
+    .header-inner {
+      .logo {
+        img {
+          width: 67px;
+          height: 22px;
+        }
+      }
+
+      .mobile-btn {
+        display: block;
+      }
+
+      .nav-wrapper {
+        display: none;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      .user_act-wrapper {
+        display: none;
+      }
+    }
+  }
+
+  .mobile-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .happy_slide {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 15px 30px 15px;
+
+    .pagination_box {
+      display: flex;
+      gap: 20px;
+
+      .text-brand {
+        display: flex;
+        gap: 7px;
+
+        h3 {
+          font-weight: 700;
+        }
+
+        P {
+          color: $font-gray;
+          font-weight: 400;
+          display: block;
+        }
+
+        .p-box {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 7px;
+          letter-spacing: -0.5px;
+        }
+      }
+
+      .pagination {
+        img {
+          width: 10px;
+        }
+      }
+    }
+
+    .box-title {
+      padding: 10px 13px;
+    }
+  }
+
+  .row2-wrapper {
+    .row2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+      transform: translate3d(0, 0, 0);
+
+      >div {
+        a:hover {
+          transform: scale(1);
+        }
+      }
+
+      .heritage {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+      }
+
+      .esg {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+      }
+
+      .spc_way {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+      }
+    }
+  }
+
+  .brand {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    .tabBox-1 {
+      .brand-swiper {
+        .swiper-slide {
+          display: grid;
+          gap: 10px;
+        }
+      }
+    }
+  }
+
+  .spc_now {
+    margin: 3px 0px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    .tabBox-2 {
+      grid-row: 2/3;
+
+      .now-swiper {
+        .swiper-slide {
+          display: grid;
+          gap: 10px;
+        }
+      }
+    }
+
+    .breadTv {
+      grid-row: 1/2;
+    }
+  }
+
+  .career_support-wrapper {
+    .career_support {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+      transform: translate3d(0, 0, 0);
+
+      .career {
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+
+      .support {
+        grid-row: 2/3;
+        grid-column: 1/2;
+      }
+
+      div {
+        a {
+          &:hover {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 40px 15px;
+    position: relative;
+  }
+
+  .footer-wrap {
+    display: flex;
+    gap: 10px;
+  }
+
+  .footer-top {
+
+    .info-1 {
+      display: flex;
+      gap: 40px;
+    }
+
+    .info-2 {
+      .address {
+        display: block;
+      }
+
+      .privacy {
+        font-weight: 500;
+        row-gap: 15px;
+        margin-top: 20px;
+      }
+    }
+
+    .footer_menu {
+      display: none;
+    }
+  }
+
+  .footer-bottm {
+    display: flex;
+    flex-direction: column;
+
+    .family {
+      .fam_box {
+        position: absolute;
+        top: 40px;
+        right: 1.5rem;
+        display: flex;
+        gap: 10px;
+
+        .select {
+          width: 35px;
+          height: 35px;
+
+          .hori_rod {
+            width: 14px;
+            height: 1px;
+            top: 49%;
+            left: 30%;
+          }
+
+          .ver_rod {
+            width: 1px;
+            height: 14px;
+            top: 31%;
+            left: 48%;
+          }
+
+          .select_wrap {
+            bottom: 40px;
+            width: 157px;
+            right: 0px;
+
+            .scrollBar {
+              color: black;
+              height: 90px;
+              width: 150px;
+
+              li {
+                font-size: 12px;
+                font-weight: 400;
+                padding: 9px 0 10px 15px;
+              }
+            }
+
+            .scrollBar::-webkit-scrollbar {
+              width: 2px;
+            }
+
+            .scrollBar::-webkit-scrollbar-thumb {
+              height: 25px;
+            }
+          }
+        }
+      }
+
+      .copy {
+        margin-bottom: 38px;
+      }
+    }
+
+    .sns_icon {
+      display: flex;
+      justify-content: flex-start;
+      gap: 15px;
+
+      li:nth-child(-n+3) {
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+
+}

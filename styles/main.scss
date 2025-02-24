@@ -1,0 +1,145 @@
+@import "./color.scss";
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 10px 50px 40px 40px;
+
+  // common-main ==================================
+  .box-title {
+    color: $white;
+    text-shadow: 1px 2px 6px rgba(0, 0, 0, .15);
+    font-weight: 700;
+    font-size: clamp(1.4rem, 1.875vw, 2.4rem);
+    padding: 20px 28px;
+    position: absolute;
+    z-index: 9;
+  }
+
+  .text_slogan {
+    font-size: clamp(5.4rem, 7.97vw, 10.2rem);
+    font-weight: 800;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    letter-spacing: -3px;
+  }
+
+  .pagination_box {
+    background-color: $white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    .text-brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+
+      h3 {
+        font-family: 'Pretendard', sans-serif;
+        font-size: clamp(1.5rem, 2.734vw, 3.5rem);
+        font-weight: 800;
+      }
+
+      P {
+        color: $font-gray;
+        font-size: clamp(1.2rem, 1.093vw, 1.4rem);
+        font-weight: 500;
+        display: inline-block;
+      }
+    }
+
+    .pagination {
+      background: $light-gray;
+      font-size: clamp(1.1rem, 1.015vw, 1.3rem);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(0.7rem, 1.48vw, 0.7rem) clamp(0.7rem, 1.48vw, 1.9rem);
+      gap: 0.5rem;
+      border-radius: 20px;
+
+      img {
+        width: 15px;
+      }
+    }
+  }
+
+}
+
+// // // =================
+// // // brand ===========
+.sl_eat,
+.sl_drink,
+.sl_enjoy {
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+.drinkImage,
+.enjoyImage,
+.br_02,
+.br_03 {
+  opacity: 0;
+  z-index: 0;
+
+  &.show,
+  &.move {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+.drinkImage,
+.enjoyImage,
+.br_02,
+.br_03 {
+  transition: opacity 0.5s ease-in-out;
+}
+
+// // =================
+// // spc_now  ========
+.sl_news,
+.sl_magazine,
+.sl_sns {
+  opacity: .5;
+  transition: opacity 0.5s ease;
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+.now_01,
+.now_02,
+.now_03 {
+  opacity: 0;
+  transition: opacity 1s ease;
+  z-index: 0;
+
+  &.move {
+    opacity: 1;
+    z-index: 1;
+  }
+}

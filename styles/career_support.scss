@@ -1,0 +1,41 @@
+.career_support-wrapper {
+  overflow: hidden;
+
+  .career_support {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 14px;
+    transform: translate3d(100vw, 0, 0);
+
+    .career {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+
+    .support {
+      grid-row: 1/2;
+      grid-column: 2/3;
+    }
+
+    div {
+      border-radius: 15px;
+      overflow: hidden;
+
+      a {
+        display: block;
+        transition-duration: .5s;
+
+        img {
+          width: 100%;
+          border-radius: 15px;
+          object-fit: cover;
+        }
+
+        &:hover {
+          transform: scale(1.1, 1.1);
+        }
+      }
+    }
+  }
+}
