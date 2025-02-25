@@ -1,8 +1,8 @@
-@import "./reset.scss";
-@import "./header.scss";
-@import "./company.scss";
-@import "./creamhouse-main.scss";
-@import "./project.scss";
+@use "./reset.scss";
+@use "./header.scss";
+@use "./company.scss";
+@use "./creamhouse-main.scss";
+@use "./project.scss";
 
 * {
   box-sizing: border-box;
