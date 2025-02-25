@@ -12,7 +12,7 @@
 
 
 var mainSwiper = new Swiper(".main-swiper", {
-    slidesPerView: 4,
+    slidesPerView: 5,
     direction: getDirection(),
 
     mousewheel: true,

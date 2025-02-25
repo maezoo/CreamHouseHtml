@@ -21,9 +21,15 @@ a {
 body {
   font-family: "Noto Sans KR", sans-serif;
   width: 100vw;
+  overflow: hidden;
+
+  // overflow-y: scroll;
+  //
   // overflow-y: hidden; //*스크롤 생길 시
-  overflow-x: hidden; //*스크롤 생길 시
-  // height: 100vh; * //내용이 100이 넘으면 소용없음
+  //*스크롤 생길 시
+  // overflow: hidden; //*스크롤 생길 시
+  // height: 100vh;
+  //내용이 100이 넘으면 소용없음Á
 }
 
 main {
