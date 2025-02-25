@@ -1,15 +1,5 @@
-// @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-// @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
-
 @import "./reset.scss";
 @import "./header.scss";
-// @import "./main.scss";
-// // @import "./happy-slide.scss";
-// // @import "./footer.scss";
-// // @import "./row2.scss";
-// // @import "./brand.scss";
-// // @import "./spc_now.scss";
-// // @import "./career_support.scss";
 
 * {
   box-sizing: border-box;
@@ -29,12 +19,13 @@ a {
 }
 
 body {
-  font-family: "Noto Sans KR";
-  position: relative;
+  font-family: "Noto Sans KR", sans-serif;
   width: 100vw;
-  overflow-x: hidden;
+  // overflow-y: hidden; //*스크롤 생길 시
+  overflow-x: hidden; //*스크롤 생길 시
+  // height: 100vh; * //내용이 100이 넘으면 소용없음
+}
 
-  // font-optical-sizing: auto;
-  // font-weight: <weight>;
-  // font-style: normal;
+main {
+  width: 100%;
 }
