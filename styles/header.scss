@@ -10,7 +10,7 @@ header {
   height: 100vh;
 }
 .header_inner {
-  padding: 55px 40px 20px;
+  padding: 60px 50px 20px;
   display: flex;
   flex-direction: column;
   border-right: 1px solid #e8e8e8;
@@ -19,58 +19,76 @@ header {
   height: 100%;
   justify-content: space-between;
 }
-nav {
-  font-weight: 500;
-  font-size: 16px;
+
+.top-header {
   display: flex;
   flex-direction: column;
-  gap: 48px;
-  div {
+  justify-content: space-between;
+  gap: 50px;
+  nav {
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    div {
+      &:hover {
+        color: #4c8cd5;
+      }
+    }
+  }
+  .download_btn {
+    width: 100%;
+    height: 65px;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      div {
+        height: 100%;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+      }
+    }
+  }
+}
+
+.bottom-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  // justify-content: flex-end;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 10px;
+
+  .inquiry_btn {
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    background-color: transparent;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+
     &:hover {
+      border: 1px solid #4c8cd5;
       color: #4c8cd5;
     }
   }
-}
-.download_btn {
-  width: 100%;
-  height: 65px;
-  border-top: 1px solid #d8d8d8;
-  border-bottom: 1px solid #d8d8d8;
-  a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    div {
-      height: 100%;
-      font-size: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
-    }
+  .address {
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    color: #666;
+    flex-direction: column;
+    gap: 5px;
   }
-}
-.inquiry_btn {
-  border: 1px solid black;
-  width: 100%;
-  height: 50px;
-  background-color: transparent;
-  line-height: 50px;
-  font-size: 14px;
-  font-weight: 400;
-
-  &:hover {
-    border: 1px solid #4c8cd5;
-    color: #4c8cd5;
-  }
-}
-.address {
-  font-size: 11px;
-  display: flex;
-  align-items: center;
-  color: #666;
-  flex-direction: column;
-  gap: 5px;
 }
 
 // ===============================
