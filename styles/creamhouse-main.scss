@@ -1,0 +1,198 @@
+// ===============================
+.slide-container {
+  // position: relative;
+  // height: 100vh;
+  width: 100vw;
+  height: 100vh;
+
+  .main-swiper {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 277px;
+    // overflow-y: auto;
+    // overflow-x: auto;
+    overflow-x: scroll;
+    // overflow: auto;
+  }
+}
+
+.main-swiper::-webkit-scrollbar {
+  height: 10px;
+}
+
+/* 스크롤바 트랙 (배경) */
+.main-swiper::-webkit-scrollbar-track {
+  background: #f1f1f1; /* 연한 회색 */
+  // border-radius: 10px; /* 둥근 모서리 */
+}
+
+.main-swiper::-webkit-scrollbar-thumb {
+  background: #b7b7b7;
+  border-radius: 10px;
+}
+
+.main-swiper::-webkit-scrollbar-thumb:hover {
+  background: #787878;
+}
+
+.swiper-wrapper {
+}
+.swiper-slide {
+  min-width: 400px;
+  width: 400px;
+  height: 100%;
+  padding: 120px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  border-right: 1px solid #e8e8e8;
+}
+
+h1 {
+  color: #d3d3d3;
+  font-weight: 900;
+  font-size: 80px;
+}
+
+.content-box {
+  .content-inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s ease-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    .bg-img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .hover-box {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        rgba(123, 170, 224, 0.85) 0%,
+        rgba(95, 134, 204, 0.85) 100%
+      );
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: 0.3s ease-out;
+
+      .icon-box {
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transform: translateY(10%);
+        transition: 0.3s ease-out;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:hover .icon-box {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.text_box {
+  display: flex;
+  flex-direction: column;
+  word-break: keep-all;
+  gap: 20px;
+  line-height: 1.5;
+  h6 {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 26px;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 14px;
+  }
+}
+
+.date {
+  font-size: 13px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+// =====================================================================
+// =====================================================================
+
+.scrollBar {
+  // color: gray;
+  // z-index: 99;
+  // bottom: 17px;
+  // height: 95px;
+  // width: 158px;
+  // overflow-x: auto;
+
+  // li {
+  //   font-size: 13px;
+  //   font-weight: 500;
+  //   padding: 11px 0 11px 20px;
+  // }
+}
+
+// .main-swiper::-webkit-scrollbar {
+//   background-color: #f6f6f6;
+//   height: 10px;
+// }
+
+// .main-swiper::-webkit-scrollbar-thumb {
+//   background-color: gray;
+//   border-radius: 10px;
+// }
+
+/* 전체 스크롤바 너비 및 높이 설정 */
+::-webkit-scrollbar {
+  width: 10px; /* 세로 스크롤바 너비 */
+  height: 10px; /* 가로 스크롤바 높이 */
+}
+
+/* 스크롤바 트랙 (배경) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* 연한 회색 */
+  border-radius: 10px; /* 둥근 모서리 */
+}
+
+/* 스크롤바 핸들(움직이는 부분) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* 어두운 회색 */
+  border-radius: 10px;
+}
+
+/* 스크롤바 핸들 hover 시 색상 변경 */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
