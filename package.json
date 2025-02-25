@@ -1,5 +1,5 @@
 {
-  "name": "spc",
+  "name": "cream-house-html",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,5 +11,5 @@
   "devDependencies": {
     "sass": "^1.79.4",
     "vite": "^5.4.1"
-  } 
+  }
 }
