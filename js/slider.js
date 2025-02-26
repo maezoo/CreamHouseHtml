@@ -1,4 +1,4 @@
-
+// ============== main slide ==================
 var mainSwiper = new Swiper(".main-swiper", {
     slidesPerView: 5,
     direction: getDirection(),
@@ -10,17 +10,19 @@ var mainSwiper = new Swiper(".main-swiper", {
     },
 });
 
-var projectSwiper = new Swiper(".project-slide", {  // 변수명 변경
+// ============== project slide ==================
+var projectSwiper = new Swiper(".project-slide", {
     slidesPerView: 5,
     direction: getDirection(),
     mousewheel: true,
     on: {
         resize: function () {
-            projectSwiper.changeDirection(getDirection());  // 변수명 변경
+            projectSwiper.changeDirection(getDirection());
         },
     },
 });
 
+// ============== 공통 함수 =============
 function getDirection() {
     var windowWidth = window.innerWidth;
     var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';

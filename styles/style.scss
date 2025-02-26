@@ -24,15 +24,34 @@ a {
 body {
   font-family: "Noto Sans KR", sans-serif;
   width: 100vw;
-  overflow-x: hidden; //*스크롤 생길 시
-
-  // overflow: hidden;
-  // overflow-y: scroll;
-  // overflow: hidden; //*스크롤 생길 시
-  // height: 100vh;
-  //내용이 100이 넘으면 소용없음Á
+  overflow-x: hidden;
 }
 
 main {
   width: 100%;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 277px;
+}
+// ====================
+
+.gnb-item {
+  display: none;
+}
+
+.gnb-item.show {
+  display: block; /* 선택된 섹션만 표시 */
+}
+
+#main-page {
+  display: none; /* 기본적으로 숨김 */
+}
+
+#main-page.show {
+  display: block; /* show 클래스 추가 시 표시 */
 }

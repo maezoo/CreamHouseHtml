@@ -12,29 +12,26 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/style.scss">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="module" src="js/slider.js" defer></script>
-
+  <script type="module" src="js/main.js" defer></script>
 </head>
 
 <body>
   <header>
     <div class="header_inner">
       <div class="top-header">
-        <div class="head_logo">
+        <div class="head-logo" data-target="#main-page">
           <a href="#">
             <img src="/images/logo.png" alt="logo">
           </a>
         </div>
         <nav>
-          <div><a href="#">COMPANY</a></div>
-          <div><a href="#">PROJECT</a></div>
-          <div><a href="#">NEWS</a></div>
-          <div><a href="#">CONTACT</a></div>
-          <div><a href="#">ESG</a></div>
+          <div class="gnb-list" data-target="#company-page"><a href="#">COMPANY</a></div>
+          <div class="gnb-list" data-target="#project-page"><a href="#">PROJECT</a></div>
+          <div class="gnb-list" data-target="#news-page">NEWS</div>
+          <div class="gnb-list" data-target="#contact-page">CONTACT</div>
+          <div class="gnb-list" data-target="#esg-page">ESG</div>
         </nav>
         <div class="download_btn">
           <a href="#">
@@ -45,8 +42,6 @@
           </a>
         </div>
       </div>
-
-
       <div class="bottom-header">
         <div class="inquiry_btn">
           <a href="#">
@@ -62,10 +57,9 @@
       </div>
     </div>
   </header>
-
   <main>
-    <!-- <section classs="creamhouse-main">
-      <div class="slide-container">
+    <section class="gnb-item creamhouse-main" id="main-page">
+      <div class="container">
         <div class="swiper main-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -511,10 +505,9 @@
           </div>
         </div>
       </div>
-    </section> -->
-
-    <!-- <section class="company">
-      <div class="company-inner">
+    </section>
+    <section class="gnb-item company" id="company-page">
+      <div class="company-inner container">
         <article class="overview">
           <h1>Overview</h1>
 
@@ -634,695 +627,701 @@
           </div>
         </article>
         <article class="history">
+          <h1>Organization</h1>
         </article>
       </div>
-    </section> -->
-
-    <section class="project">
-      <div class="swiper project-slide">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <h1>53</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/FC-seoul.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+    </section>
+    <section class="gnb-item project" id="project-page">
+      <div class="container">
+        <div class="swiper project-slide ">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h1>53</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/FC-seoul.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Web/Mobile</h6>
+                <h3>2024년 GS스포츠 FC서울 온라인 쇼핑몰 디자인 개편</h3>
+                <p>
+                  브랜드 일관성 강화를 위한 FC서울 쇼핑몰 디자인 개편
+                  <br>다양한 디바이스에서 최적의 사용자 경험을 제공하기 위한 UX 개선
+                  <br>적용기술: AWS, SpringBoot 2.2.1, 티켓링크 연동, 쇼핑몰 기능, 쿠폰 기능
+                </p>
+              </div>
+              <div class="reference">
+                <p>(주)GS스포츠</p>
+                <p class="date">2024.01 ~ 2024.12</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Web/Mobile</h6>
-              <h3>2024년 GS스포츠 FC서울 온라인 쇼핑몰 디자인 개편</h3>
-              <p>
-                브랜드 일관성 강화를 위한 FC서울 쇼핑몰 디자인 개편
-                <br>다양한 디바이스에서 최적의 사용자 경험을 제공하기 위한 UX 개선
-                <br>적용기술: AWS, SpringBoot 2.2.1, 티켓링크 연동, 쇼핑몰 기능, 쿠폰 기능
-              </p>
-            </div>
-            <div class="reference">
-              <p>(주)GS스포츠</p>
-              <p class="date">2024.03 ~ 2024.05</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>52</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/pet-1.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>52</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/pet-1.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Construction/Application</h6>
+                <h3>2024년 펫토닥 서비스 위탁 운영</h3>
+                <p>
+                  반려동물을 위한 앱, 일정관리, 식이관리, 질병관리,커뮤니티, 알림 기능 제공
+                  <br>
+                  의료장비앱과의 연동 기능 제공
+                  <br>
+                  flutter로 아이폰,안드로이드 앱 동시 개발진행
+                  <br>
+                  Azure Cloud 시스템을 이용한 인프라 구축 및 배포관리
+                  <br>
+                  After Effects로 애니메이션 구현
+                </p>
+              </div>
+              <div class="reference">
+                <p>(주)GS스포츠</p>
+                <p class="date">2024.01 ~ 2024.12</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Construction/Application</h6>
-              <h3>2024년 펫토닥 서비스 위탁 운영</h3>
-              <p>
-                반려동물을 위한 앱, 일정관리, 식이관리, 질병관리,커뮤니티, 알림 기능 제공
-                <br>
-                의료장비앱과의 연동 기능 제공
-                <br>
-                flutter로 아이폰,안드로이드 앱 동시 개발진행
-                <br>
-                Azure Cloud 시스템을 이용한 인프라 구축 및 배포관리
-                <br>
-                After Effects로 애니메이션 구현
-              </p>
-            </div>
-            <div class="reference">
-              <p>(주)GS스포츠</p>
-              <p class="date">2024.03 ~ 2024.05</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>51</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/pet-2.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>51</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/pet-2.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Application</h6>
+                <h3>2023년 반려동물 만성질환 관리 APP 및 admin 개발</h3>
+                <p>반려동물을 위한 앱, 일정관리, 식이관리, 질병관리,커뮤니티, 알림 기능 제공
+                  <br>
+                  의료장비앱과의 연동 기능 제공
+                  <br>
+                  flutter로 아이폰,안드로이드 앱 동시 개발진행
+                  <br>
+                  Azure Cloud 시스템을 이용한 인프라 구축 및 배포관리
+                  <br>
+                  After Effects로 애니메이션 구현
+                </p>
+              </div>
+              <div class="reference">
+                <p>SK텔레콤㈜</p>
+                <p class="date">2023.04 ~ 2023.12</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Application</h6>
-              <h3>2023년 반려동물 만성질환 관리 APP 및 admin 개발</h3>
-              <p>반려동물을 위한 앱, 일정관리, 식이관리, 질병관리,커뮤니티, 알림 기능 제공
-                <br>
-                의료장비앱과의 연동 기능 제공
-                <br>
-                flutter로 아이폰,안드로이드 앱 동시 개발진행
-                <br>
-                Azure Cloud 시스템을 이용한 인프라 구축 및 배포관리
-                <br>
-                After Effects로 애니메이션 구현
-              </p>
-            </div>
-            <div class="reference">
-              <p>SK텔레콤㈜</p>
-              <p class="date">2023.04 ~ 2023.12</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>50</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/FC-jeju.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>50</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/FC-jeju.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Web/Mobile/Application</h6>
+                <h3>2023년 제주UTD 홈페이지/앱 신규 개발 용역</h3>
+                <p>
+                  Azure
+                  creamCMS 적용(사용자/관리자 메뉴 관리, 게시판 관리)
+                  <br>
+                  사용성과 트랜드 있는 디자인
+                  <br>
+                  티켓링크 연동, 쇼핑몰 기능, 쿠폰 기능
+                  <br>
+                  경기 일정 및 결과 데이터 자동 웹 크롤링 기능
+                </p>
+              </div>
+              <div class="reference">
+                <p>(사)한국프로스포츠협회</p>
+                <p class="date"> 2023.04 ~ 2023.06</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Web/Mobile/Application</h6>
-              <h3>2023년 제주UTD 홈페이지/앱 신규 개발 용역</h3>
-              <p>
-                Azure
-                creamCMS 적용(사용자/관리자 메뉴 관리, 게시판 관리)
-                <br>
-                사용성과 트랜드 있는 디자인
-                <br>
-                티켓링크 연동, 쇼핑몰 기능, 쿠폰 기능
-                <br>
-                경기 일정 및 결과 데이터 자동 웹 크롤링 기능
-              </p>
-            </div>
-            <div class="reference">
-              <p>(사)한국프로스포츠협회</p>
-              <p class="date"> 2023.04 ~ 2023.06</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>49</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/devocean.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>49</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/devocean.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Web/Mobile/Application</h6>
+                <h3>2023년 SKT 데보션 웹/앱 고도화 개발 및 운영</h3>
+                <p>
+                  앱 고도화 및 앱 활성화를 위한 기능 개발 <br>
+                  관리자 시스템 기능 개선 <br>
+                  데보션 인사이드 기능 개선 <br>
+                  SK그룹의 대표 개발자 커뮤니티로 내/외부 개발자 간 소통과 성장을 목표로 하는 플랫폼 <br>
+                  적용기술 특징: aws, spring, flutter <br>
+                  커뮤니티 기능 강화를 위한 메뉴 개편 <br>
+                  데보션 웹에 커뮤니티 기능 추가하여 사용자 편의성 증대 <br>
+                  APP배포 환경을 자동화하여 업무 효율성 높임 <br>
+                  Chat GPT 적용하여 사용자에게 다양하고 재미있는 기술 제공
+                </p>
+              </div>
+              <div class="reference">
+                <p> SK텔레콤㈜</p>
+                <p class="date">2022.11 ~ 2023.11</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Web/Mobile/Application</h6>
-              <h3>2023년 SKT 데보션 웹/앱 고도화 개발 및 운영</h3>
-              <p>
-                앱 고도화 및 앱 활성화를 위한 기능 개발 <br>
-                관리자 시스템 기능 개선 <br>
-                데보션 인사이드 기능 개선 <br>
-                SK그룹의 대표 개발자 커뮤니티로 내/외부 개발자 간 소통과 성장을 목표로 하는 플랫폼 <br>
-                적용기술 특징: aws, spring, flutter <br>
-                커뮤니티 기능 강화를 위한 메뉴 개편 <br>
-                데보션 웹에 커뮤니티 기능 추가하여 사용자 편의성 증대 <br>
-                APP배포 환경을 자동화하여 업무 효율성 높임 <br>
-                Chat GPT 적용하여 사용자에게 다양하고 재미있는 기술 제공
-              </p>
-            </div>
-            <div class="reference">
-              <p> SK텔레콤㈜</p>
-              <p class="date">2022.11 ~ 2023.11</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>48</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/FC-seoul.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>48</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/FC-seoul.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Web/Mobile</h6>
+                <h3>2024년 GS스포츠 FC서울 온라인 쇼핑몰 디자인 개편</h3>
+                <p>
+                  브랜드 일관성 강화를 위한 FC서울 쇼핑몰 디자인 개편
+                  <br>다양한 디바이스에서 최적의 사용자 경험을 제공하기 위한 UX 개선
+                  <br>적용기술: AWS, SpringBoot 2.2.1, 티켓링크 연동, 쇼핑몰 기능, 쿠폰 기능
+                </p>
+              </div>
+              <div class="reference">
+                <p>(주)GS스포츠</p>
+                <p class="date">2024.01 ~ 2024.12</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Web/Mobile</h6>
-              <h3>2024년 GS스포츠 FC서울 온라인 쇼핑몰 디자인 개편</h3>
-              <p>
-                브랜드 일관성 강화를 위한 FC서울 쇼핑몰 디자인 개편
-                <br>다양한 디바이스에서 최적의 사용자 경험을 제공하기 위한 UX 개선
-                <br>적용기술: AWS, SpringBoot 2.2.1, 티켓링크 연동, 쇼핑몰 기능, 쿠폰 기능
-              </p>
-            </div>
-            <div class="reference">
-              <p>(주)GS스포츠</p>
-              <p class="date">2024.03 ~ 2024.05</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>47</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/pet-1.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>47</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/pet-1.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Construction/Application</h6>
+                <h3>2024년 펫토닥 서비스 위탁 운영</h3>
+                <p>
+                  반려동물을 위한 앱, 일정관리, 식이관리, 질병관리,커뮤니티, 알림 기능 제공
+                  <br>
+                  의료장비앱과의 연동 기능 제공
+                  <br>
+                  flutter로 아이폰,안드로이드 앱 동시 개발진행
+                  <br>
+                  Azure Cloud 시스템을 이용한 인프라 구축 및 배포관리
+                  <br>
+                  After Effects로 애니메이션 구현
+                </p>
+              </div>
+              <div class="reference">
+                <p>(주)GS스포츠</p>
+                <p class="date">2024.01 ~ 2024.12</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Construction/Application</h6>
-              <h3>2024년 펫토닥 서비스 위탁 운영</h3>
-              <p>
-                반려동물을 위한 앱, 일정관리, 식이관리, 질병관리,커뮤니티, 알림 기능 제공
-                <br>
-                의료장비앱과의 연동 기능 제공
-                <br>
-                flutter로 아이폰,안드로이드 앱 동시 개발진행
-                <br>
-                Azure Cloud 시스템을 이용한 인프라 구축 및 배포관리
-                <br>
-                After Effects로 애니메이션 구현
-              </p>
-            </div>
-            <div class="reference">
-              <p>(주)GS스포츠</p>
-              <p class="date">2024.03 ~ 2024.05</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>46</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/pet-2.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>46</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/pet-2.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Application</h6>
+                <h3>2023년 반려동물 만성질환 관리 APP 및 admin 개발</h3>
+                <p>반려동물을 위한 앱, 일정관리, 식이관리, 질병관리,커뮤니티, 알림 기능 제공
+                  <br>
+                  의료장비앱과의 연동 기능 제공
+                  <br>
+                  flutter로 아이폰,안드로이드 앱 동시 개발진행
+                  <br>
+                  Azure Cloud 시스템을 이용한 인프라 구축 및 배포관리
+                  <br>
+                  After Effects로 애니메이션 구현
+                </p>
+              </div>
+              <div class="reference">
+                <p>SK텔레콤㈜</p>
+                <p class="date">2023.04 ~ 2023.12</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Application</h6>
-              <h3>2023년 반려동물 만성질환 관리 APP 및 admin 개발</h3>
-              <p>반려동물을 위한 앱, 일정관리, 식이관리, 질병관리,커뮤니티, 알림 기능 제공
-                <br>
-                의료장비앱과의 연동 기능 제공
-                <br>
-                flutter로 아이폰,안드로이드 앱 동시 개발진행
-                <br>
-                Azure Cloud 시스템을 이용한 인프라 구축 및 배포관리
-                <br>
-                After Effects로 애니메이션 구현
-              </p>
-            </div>
-            <div class="reference">
-              <p>SK텔레콤㈜</p>
-              <p class="date">2023.04 ~ 2023.12</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>45</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/FC-jeju.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>45</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/FC-jeju.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Web/Mobile/Application</h6>
+                <h3>2023년 제주UTD 홈페이지/앱 신규 개발 용역</h3>
+                <p>
+                  Azure
+                  creamCMS 적용(사용자/관리자 메뉴 관리, 게시판 관리)
+                  <br>
+                  사용성과 트랜드 있는 디자인
+                  <br>
+                  티켓링크 연동, 쇼핑몰 기능, 쿠폰 기능
+                  <br>
+                  경기 일정 및 결과 데이터 자동 웹 크롤링 기능
+                </p>
+              </div>
+              <div class="reference">
+                <p>(사)한국프로스포츠협회</p>
+                <p class="date"> 2023.04 ~ 2023.06</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Web/Mobile/Application</h6>
-              <h3>2023년 제주UTD 홈페이지/앱 신규 개발 용역</h3>
-              <p>
-                Azure
-                creamCMS 적용(사용자/관리자 메뉴 관리, 게시판 관리)
-                <br>
-                사용성과 트랜드 있는 디자인
-                <br>
-                티켓링크 연동, 쇼핑몰 기능, 쿠폰 기능
-                <br>
-                경기 일정 및 결과 데이터 자동 웹 크롤링 기능
-              </p>
-            </div>
-            <div class="reference">
-              <p>(사)한국프로스포츠협회</p>
-              <p class="date"> 2023.04 ~ 2023.06</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>44</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/devocean.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>44</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/devocean.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Web/Mobile/Application</h6>
+                <h3>2023년 SKT 데보션 웹/앱 고도화 개발 및 운영</h3>
+                <p>
+                  앱 고도화 및 앱 활성화를 위한 기능 개발 <br>
+                  관리자 시스템 기능 개선 <br>
+                  데보션 인사이드 기능 개선 <br>
+                  SK그룹의 대표 개발자 커뮤니티로 내/외부 개발자 간 소통과 성장을 목표로 하는 플랫폼 <br>
+                  적용기술 특징: aws, spring, flutter <br>
+                  커뮤니티 기능 강화를 위한 메뉴 개편 <br>
+                  데보션 웹에 커뮤니티 기능 추가하여 사용자 편의성 증대 <br>
+                  APP배포 환경을 자동화하여 업무 효율성 높임 <br>
+                  Chat GPT 적용하여 사용자에게 다양하고 재미있는 기술 제공
+                </p>
+              </div>
+              <div class="reference">
+                <p> SK텔레콤㈜</p>
+                <p class="date">2022.11 ~ 2023.11</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Web/Mobile/Application</h6>
-              <h3>2023년 SKT 데보션 웹/앱 고도화 개발 및 운영</h3>
-              <p>
-                앱 고도화 및 앱 활성화를 위한 기능 개발 <br>
-                관리자 시스템 기능 개선 <br>
-                데보션 인사이드 기능 개선 <br>
-                SK그룹의 대표 개발자 커뮤니티로 내/외부 개발자 간 소통과 성장을 목표로 하는 플랫폼 <br>
-                적용기술 특징: aws, spring, flutter <br>
-                커뮤니티 기능 강화를 위한 메뉴 개편 <br>
-                데보션 웹에 커뮤니티 기능 추가하여 사용자 편의성 증대 <br>
-                APP배포 환경을 자동화하여 업무 효율성 높임 <br>
-                Chat GPT 적용하여 사용자에게 다양하고 재미있는 기술 제공
-              </p>
-            </div>
-            <div class="reference">
-              <p> SK텔레콤㈜</p>
-              <p class="date">2022.11 ~ 2023.11</p>
-            </div>
-          </div>
-
-          <!-- +++++++++++++++++++++ -->
-          <div class="swiper-slide">
-            <h1>43</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/FC-seoul.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>43</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/FC-seoul.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Web/Mobile</h6>
+                <h3>2024년 GS스포츠 FC서울 온라인 쇼핑몰 디자인 개편</h3>
+                <p>
+                  브랜드 일관성 강화를 위한 FC서울 쇼핑몰 디자인 개편
+                  <br>다양한 디바이스에서 최적의 사용자 경험을 제공하기 위한 UX 개선
+                  <br>적용기술: AWS, SpringBoot 2.2.1, 티켓링크 연동, 쇼핑몰 기능, 쿠폰 기능
+                </p>
+              </div>
+              <div class="reference">
+                <p>(주)GS스포츠</p>
+                <p class="date">2024.01 ~ 2024.12</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Web/Mobile</h6>
-              <h3>2024년 GS스포츠 FC서울 온라인 쇼핑몰 디자인 개편</h3>
-              <p>
-                브랜드 일관성 강화를 위한 FC서울 쇼핑몰 디자인 개편
-                <br>다양한 디바이스에서 최적의 사용자 경험을 제공하기 위한 UX 개선
-                <br>적용기술: AWS, SpringBoot 2.2.1, 티켓링크 연동, 쇼핑몰 기능, 쿠폰 기능
-              </p>
-            </div>
-            <div class="reference">
-              <p>(주)GS스포츠</p>
-              <p class="date">2024.03 ~ 2024.05</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>42</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/pet-1.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>42</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/pet-1.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Construction/Application</h6>
+                <h3>2024년 펫토닥 서비스 위탁 운영</h3>
+                <p>
+                  반려동물을 위한 앱, 일정관리, 식이관리, 질병관리,커뮤니티, 알림 기능 제공
+                  <br>
+                  의료장비앱과의 연동 기능 제공
+                  <br>
+                  flutter로 아이폰,안드로이드 앱 동시 개발진행
+                  <br>
+                  Azure Cloud 시스템을 이용한 인프라 구축 및 배포관리
+                  <br>
+                  After Effects로 애니메이션 구현
+                </p>
+              </div>
+              <div class="reference">
+                <p>(주)GS스포츠</p>
+                <p class="date">2024.01 ~ 2024.12</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Construction/Application</h6>
-              <h3>2024년 펫토닥 서비스 위탁 운영</h3>
-              <p>
-                반려동물을 위한 앱, 일정관리, 식이관리, 질병관리,커뮤니티, 알림 기능 제공
-                <br>
-                의료장비앱과의 연동 기능 제공
-                <br>
-                flutter로 아이폰,안드로이드 앱 동시 개발진행
-                <br>
-                Azure Cloud 시스템을 이용한 인프라 구축 및 배포관리
-                <br>
-                After Effects로 애니메이션 구현
-              </p>
-            </div>
-            <div class="reference">
-              <p>(주)GS스포츠</p>
-              <p class="date">2024.03 ~ 2024.05</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>41</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/pet-2.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>41</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/pet-2.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Application</h6>
+                <h3>2023년 반려동물 만성질환 관리 APP 및 admin 개발</h3>
+                <p>반려동물을 위한 앱, 일정관리, 식이관리, 질병관리,커뮤니티, 알림 기능 제공
+                  <br>
+                  의료장비앱과의 연동 기능 제공
+                  <br>
+                  flutter로 아이폰,안드로이드 앱 동시 개발진행
+                  <br>
+                  Azure Cloud 시스템을 이용한 인프라 구축 및 배포관리
+                  <br>
+                  After Effects로 애니메이션 구현
+                </p>
+              </div>
+              <div class="reference">
+                <p>SK텔레콤㈜</p>
+                <p class="date">2023.04 ~ 2023.12</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Application</h6>
-              <h3>2023년 반려동물 만성질환 관리 APP 및 admin 개발</h3>
-              <p>반려동물을 위한 앱, 일정관리, 식이관리, 질병관리,커뮤니티, 알림 기능 제공
-                <br>
-                의료장비앱과의 연동 기능 제공
-                <br>
-                flutter로 아이폰,안드로이드 앱 동시 개발진행
-                <br>
-                Azure Cloud 시스템을 이용한 인프라 구축 및 배포관리
-                <br>
-                After Effects로 애니메이션 구현
-              </p>
-            </div>
-            <div class="reference">
-              <p>SK텔레콤㈜</p>
-              <p class="date">2023.04 ~ 2023.12</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>40</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/FC-jeju.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>40</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/FC-jeju.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Web/Mobile/Application</h6>
+                <h3>2023년 제주UTD 홈페이지/앱 신규 개발 용역</h3>
+                <p>
+                  Azure
+                  creamCMS 적용(사용자/관리자 메뉴 관리, 게시판 관리)
+                  <br>
+                  사용성과 트랜드 있는 디자인
+                  <br>
+                  티켓링크 연동, 쇼핑몰 기능, 쿠폰 기능
+                  <br>
+                  경기 일정 및 결과 데이터 자동 웹 크롤링 기능
+                </p>
+              </div>
+              <div class="reference">
+                <p>(사)한국프로스포츠협회</p>
+                <p class="date"> 2023.04 ~ 2023.06</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Web/Mobile/Application</h6>
-              <h3>2023년 제주UTD 홈페이지/앱 신규 개발 용역</h3>
-              <p>
-                Azure
-                creamCMS 적용(사용자/관리자 메뉴 관리, 게시판 관리)
-                <br>
-                사용성과 트랜드 있는 디자인
-                <br>
-                티켓링크 연동, 쇼핑몰 기능, 쿠폰 기능
-                <br>
-                경기 일정 및 결과 데이터 자동 웹 크롤링 기능
-              </p>
-            </div>
-            <div class="reference">
-              <p>(사)한국프로스포츠협회</p>
-              <p class="date"> 2023.04 ~ 2023.06</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>39</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/devocean.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>39</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/devocean.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Web/Mobile/Application</h6>
+                <h3>2023년 SKT 데보션 웹/앱 고도화 개발 및 운영</h3>
+                <p>
+                  앱 고도화 및 앱 활성화를 위한 기능 개발 <br>
+                  관리자 시스템 기능 개선 <br>
+                  데보션 인사이드 기능 개선 <br>
+                  SK그룹의 대표 개발자 커뮤니티로 내/외부 개발자 간 소통과 성장을 목표로 하는 플랫폼 <br>
+                  적용기술 특징: aws, spring, flutter <br>
+                  커뮤니티 기능 강화를 위한 메뉴 개편 <br>
+                  데보션 웹에 커뮤니티 기능 추가하여 사용자 편의성 증대 <br>
+                  APP배포 환경을 자동화하여 업무 효율성 높임 <br>
+                  Chat GPT 적용하여 사용자에게 다양하고 재미있는 기술 제공
+                </p>
+              </div>
+              <div class="reference">
+                <p> SK텔레콤㈜</p>
+                <p class="date">2022.11 ~ 2023.11</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Web/Mobile/Application</h6>
-              <h3>2023년 SKT 데보션 웹/앱 고도화 개발 및 운영</h3>
-              <p>
-                앱 고도화 및 앱 활성화를 위한 기능 개발 <br>
-                관리자 시스템 기능 개선 <br>
-                데보션 인사이드 기능 개선 <br>
-                SK그룹의 대표 개발자 커뮤니티로 내/외부 개발자 간 소통과 성장을 목표로 하는 플랫폼 <br>
-                적용기술 특징: aws, spring, flutter <br>
-                커뮤니티 기능 강화를 위한 메뉴 개편 <br>
-                데보션 웹에 커뮤니티 기능 추가하여 사용자 편의성 증대 <br>
-                APP배포 환경을 자동화하여 업무 효율성 높임 <br>
-                Chat GPT 적용하여 사용자에게 다양하고 재미있는 기술 제공
-              </p>
-            </div>
-            <div class="reference">
-              <p> SK텔레콤㈜</p>
-              <p class="date">2022.11 ~ 2023.11</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>38</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/FC-seoul.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>38</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/FC-seoul.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Web/Mobile</h6>
+                <h3>2024년 GS스포츠 FC서울 온라인 쇼핑몰 디자인 개편</h3>
+                <p>
+                  브랜드 일관성 강화를 위한 FC서울 쇼핑몰 디자인 개편
+                  <br>다양한 디바이스에서 최적의 사용자 경험을 제공하기 위한 UX 개선
+                  <br>적용기술: AWS, SpringBoot 2.2.1, 티켓링크 연동, 쇼핑몰 기능, 쿠폰 기능
+                </p>
+              </div>
+              <div class="reference">
+                <p>(주)GS스포츠</p>
+                <p class="date">2024.01 ~ 2024.12</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Web/Mobile</h6>
-              <h3>2024년 GS스포츠 FC서울 온라인 쇼핑몰 디자인 개편</h3>
-              <p>
-                브랜드 일관성 강화를 위한 FC서울 쇼핑몰 디자인 개편
-                <br>다양한 디바이스에서 최적의 사용자 경험을 제공하기 위한 UX 개선
-                <br>적용기술: AWS, SpringBoot 2.2.1, 티켓링크 연동, 쇼핑몰 기능, 쿠폰 기능
-              </p>
-            </div>
-            <div class="reference">
-              <p>(주)GS스포츠</p>
-              <p class="date">2024.03 ~ 2024.05</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>37</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/pet-1.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>37</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/pet-1.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Construction/Application</h6>
+                <h3>2024년 펫토닥 서비스 위탁 운영</h3>
+                <p>
+                  반려동물을 위한 앱, 일정관리, 식이관리, 질병관리,커뮤니티, 알림 기능 제공
+                  <br>
+                  의료장비앱과의 연동 기능 제공
+                  <br>
+                  flutter로 아이폰,안드로이드 앱 동시 개발진행
+                  <br>
+                  Azure Cloud 시스템을 이용한 인프라 구축 및 배포관리
+                  <br>
+                  After Effects로 애니메이션 구현
+                </p>
+              </div>
+              <div class="reference">
+                <p>(주)GS스포츠</p>
+                <p class="date">2024.01 ~ 2024.12</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Construction/Application</h6>
-              <h3>2024년 펫토닥 서비스 위탁 운영</h3>
-              <p>
-                반려동물을 위한 앱, 일정관리, 식이관리, 질병관리,커뮤니티, 알림 기능 제공
-                <br>
-                의료장비앱과의 연동 기능 제공
-                <br>
-                flutter로 아이폰,안드로이드 앱 동시 개발진행
-                <br>
-                Azure Cloud 시스템을 이용한 인프라 구축 및 배포관리
-                <br>
-                After Effects로 애니메이션 구현
-              </p>
-            </div>
-            <div class="reference">
-              <p>(주)GS스포츠</p>
-              <p class="date">2024.03 ~ 2024.05</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>36</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/pet-2.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>36</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/pet-2.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Application</h6>
+                <h3>2023년 반려동물 만성질환 관리 APP 및 admin 개발</h3>
+                <p>반려동물을 위한 앱, 일정관리, 식이관리, 질병관리,커뮤니티, 알림 기능 제공
+                  <br>
+                  의료장비앱과의 연동 기능 제공
+                  <br>
+                  flutter로 아이폰,안드로이드 앱 동시 개발진행
+                  <br>
+                  Azure Cloud 시스템을 이용한 인프라 구축 및 배포관리
+                  <br>
+                  After Effects로 애니메이션 구현
+                </p>
+              </div>
+              <div class="reference">
+                <p>SK텔레콤㈜</p>
+                <p class="date">2023.04 ~ 2023.12</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Application</h6>
-              <h3>2023년 반려동물 만성질환 관리 APP 및 admin 개발</h3>
-              <p>반려동물을 위한 앱, 일정관리, 식이관리, 질병관리,커뮤니티, 알림 기능 제공
-                <br>
-                의료장비앱과의 연동 기능 제공
-                <br>
-                flutter로 아이폰,안드로이드 앱 동시 개발진행
-                <br>
-                Azure Cloud 시스템을 이용한 인프라 구축 및 배포관리
-                <br>
-                After Effects로 애니메이션 구현
-              </p>
-            </div>
-            <div class="reference">
-              <p>SK텔레콤㈜</p>
-              <p class="date">2023.04 ~ 2023.12</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>35</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/FC-jeju.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>35</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/FC-jeju.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Web/Mobile/Application</h6>
+                <h3>2023년 제주UTD 홈페이지/앱 신규 개발 용역</h3>
+                <p>
+                  Azure
+                  creamCMS 적용(사용자/관리자 메뉴 관리, 게시판 관리)
+                  <br>
+                  사용성과 트랜드 있는 디자인
+                  <br>
+                  티켓링크 연동, 쇼핑몰 기능, 쿠폰 기능
+                  <br>
+                  경기 일정 및 결과 데이터 자동 웹 크롤링 기능
+                </p>
+              </div>
+              <div class="reference">
+                <p>(사)한국프로스포츠협회</p>
+                <p class="date"> 2023.04 ~ 2023.06</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Web/Mobile/Application</h6>
-              <h3>2023년 제주UTD 홈페이지/앱 신규 개발 용역</h3>
-              <p>
-                Azure
-                creamCMS 적용(사용자/관리자 메뉴 관리, 게시판 관리)
-                <br>
-                사용성과 트랜드 있는 디자인
-                <br>
-                티켓링크 연동, 쇼핑몰 기능, 쿠폰 기능
-                <br>
-                경기 일정 및 결과 데이터 자동 웹 크롤링 기능
-              </p>
-            </div>
-            <div class="reference">
-              <p>(사)한국프로스포츠협회</p>
-              <p class="date"> 2023.04 ~ 2023.06</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <h1>34</h1>
-            <div class="content-box">
-              <div class="content-inner">
-                <a href="#">
-                  <img src="/images/devocean.jpg" alt="" class="bg-img">
-                  <div class="hover-box">
-                    <div class="icon-box">
-                      <img src="/images/icon-detail-view.png" alt="" class="icon-view">
-                      <p>Detail View</p>
+            <div class="swiper-slide">
+              <h1>34</h1>
+              <div class="content-box">
+                <div class="content-inner">
+                  <a href="#">
+                    <img src="/images/devocean.jpg" alt="" class="bg-img">
+                    <div class="hover-box">
+                      <div class="icon-box">
+                        <img src="/images/icon-detail-view.png" alt="" class="icon-view">
+                        <p>Detail View</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+              <div class="text_box">
+                <h6>Web/Mobile/Application</h6>
+                <h3>2023년 SKT 데보션 웹/앱 고도화 개발 및 운영</h3>
+                <p>
+                  앱 고도화 및 앱 활성화를 위한 기능 개발 <br>
+                  관리자 시스템 기능 개선 <br>
+                  데보션 인사이드 기능 개선 <br>
+                  SK그룹의 대표 개발자 커뮤니티로 내/외부 개발자 간 소통과 성장을 목표로 하는 플랫폼 <br>
+                  적용기술 특징: aws, spring, flutter <br>
+                  커뮤니티 기능 강화를 위한 메뉴 개편 <br>
+                  데보션 웹에 커뮤니티 기능 추가하여 사용자 편의성 증대 <br>
+                  APP배포 환경을 자동화하여 업무 효율성 높임 <br>
+                  Chat GPT 적용하여 사용자에게 다양하고 재미있는 기술 제공
+                </p>
+              </div>
+              <div class="reference">
+                <p> SK텔레콤㈜</p>
+                <p class="date">2022.11 ~ 2023.11</p>
               </div>
             </div>
-            <div class="text_box">
-              <h6>Web/Mobile/Application</h6>
-              <h3>2023년 SKT 데보션 웹/앱 고도화 개발 및 운영</h3>
-              <p>
-                앱 고도화 및 앱 활성화를 위한 기능 개발 <br>
-                관리자 시스템 기능 개선 <br>
-                데보션 인사이드 기능 개선 <br>
-                SK그룹의 대표 개발자 커뮤니티로 내/외부 개발자 간 소통과 성장을 목표로 하는 플랫폼 <br>
-                적용기술 특징: aws, spring, flutter <br>
-                커뮤니티 기능 강화를 위한 메뉴 개편 <br>
-                데보션 웹에 커뮤니티 기능 추가하여 사용자 편의성 증대 <br>
-                APP배포 환경을 자동화하여 업무 효율성 높임 <br>
-                Chat GPT 적용하여 사용자에게 다양하고 재미있는 기술 제공
-              </p>
-            </div>
-            <div class="reference">
-              <p> SK텔레콤㈜</p>
-              <p class="date">2022.11 ~ 2023.11</p>
-            </div>
           </div>
-
-
-
-
-          <!-- +++++++++++++++++++++ -->
-
-
-
         </div>
       </div>
     </section>
-
+    <section class="gnb-item news">
+      <div class="container">
+        <div>NEWS</div>
+      </div>
+    </section>
+    <section class="gnb-item contact">
+      <div class="container">
+        <div>CONTACT</div>
+      </div>
+    </section>
+    <section class="gnb-item esg">
+      <div class="container">
+        <div>ESG</div>
+      </div>
+    </section>
   </main>
 </body>
 

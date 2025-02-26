@@ -1,15 +1,9 @@
-.company {
+.company-inner {
   width: 100vw;
   height: 100vh;
-  background: white url(../images/company-detail.png) no-repeat;
-  background-position: 90% -150%;
-  position: absolute;
-  top: 0;
-  left: 277px;
   padding: 60px 0 0px 50px;
-}
-
-.company-inner {
+  background: white url(../images/company-detail.png) no-repeat;
+  background-position: 90% 100px;
   display: flex;
   flex-direction: column;
   gap: 200px;
@@ -19,6 +13,10 @@ article {
   display: flex;
   flex-direction: column;
   gap: 50px;
+
+  h1 {
+    font-weight: 900;
+  }
 
   h1,
   .slogan {
