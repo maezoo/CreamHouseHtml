@@ -55,3 +55,19 @@ main {
 #main-page.show {
   display: block; /* show 클래스 추가 시 표시 */
 }
+
+//  ======================= scroll-bar =======================
+.swiper-scrollbar-drag {
+  background-color: #b6b6b6;
+
+  &:hover {
+    background-color: #777;
+  }
+}
+
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: absolute;
+  bottom: 15px;
+  height: 7px;
+}
+//  ======================= scroll-bar =======================

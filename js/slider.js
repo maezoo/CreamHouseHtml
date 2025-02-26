@@ -3,6 +3,10 @@ var mainSwiper = new Swiper(".main-swiper", {
     slidesPerView: 5,
     direction: getDirection(),
     mousewheel: true,
+    scrollbar: {
+        el: '.main-scrollbar',
+        draggable: true,
+    },
     on: {
         resize: function () {
             mainSwiper.changeDirection(getDirection());
@@ -15,6 +19,10 @@ var projectSwiper = new Swiper(".project-slide", {
     slidesPerView: 5,
     direction: getDirection(),
     mousewheel: true,
+    scrollbar: {
+        el: '.project-scrollbar',
+        draggable: true,
+    },
     on: {
         resize: function () {
             projectSwiper.changeDirection(getDirection());
