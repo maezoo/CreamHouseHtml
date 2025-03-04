@@ -1,13 +1,16 @@
 .company-item {
+  width: 100%;
   min-height: 100vh;
   background: white url(../images/company-detail.png) no-repeat;
   background-position: 100% 100px;
-  // max-width: 1440px;
-  width: 100%;
   position: absolute;
   top: 0;
   left: 277px;
   padding: 60px 50px;
+  width: calc(100% - 277px);
+}
+
+.article-wrapper {
   display: flex;
   flex-direction: column;
   gap: 200px;
@@ -32,6 +35,7 @@ article {
 
 .overview {
   .info-title {
+    min-width: 113px;
     color: #72a8db;
     font-weight: 600;
   }
@@ -44,14 +48,12 @@ article {
   .info-box {
     gap: 20px;
     font-size: 1.4rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(1fr, 5);
+    display: flex;
+    flex-direction: column;
   }
 
   .info-item {
-    display: grid;
-    grid-template-columns: 0.5fr 2.5fr;
+    display: flex;
   }
 
   .info-item:nth-child(1) {
@@ -88,63 +90,62 @@ article {
 
 .business-icon {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 50px;
 
   .icon-inner {
-    width: 100%;
+    flex-grow: 1;
     display: flex;
     gap: 50px;
+  }
 
-    .business-item {
-      width: 100%;
-      max-width: 500px;
-      div:nth-child(1) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        padding-bottom: 30px;
-        border-bottom: 1px solid #e8e8e8;
+  .business-item {
+    width: 100%;
 
-        img {
-          width: fit-content;
-        }
-        h3 {
-          font-weight: 900;
-          font-size: 2.2rem;
-        }
+    div:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #e8e8e8;
+
+      img {
+        width: fit-content;
       }
-
-      div:nth-child(2) {
-        padding-top: 30px;
-
-        p {
-          text-align: center;
-          line-height: 1.5;
-          font-size: 1.4rem;
-          color: #666;
-        }
+      h3 {
+        font-weight: 900;
+        font-size: 2.2rem;
       }
     }
 
-    .web {
-      img {
-        margin-top: 15px;
+    div:nth-child(2) {
+      padding-top: 30px;
+      word-break: keep-all;
+
+      p {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 1.4rem;
+        color: #666;
       }
     }
+  }
 
-    .Mark-Median {
-      img {
-        margin-top: 4px;
-      }
+  .web {
+    img {
+      margin-top: 15px;
     }
+  }
 
-    .mobile {
-      img {
-        margin-top: 2px;
-      }
+  .Mark-Median {
+    img {
+      margin-top: 4px;
+    }
+  }
+
+  .mobile {
+    img {
+      margin-top: 2px;
     }
   }
 }
