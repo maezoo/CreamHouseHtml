@@ -111,4 +111,100 @@
       align-items: center;
     }
   }
+
+  .company-item {
+    width: 100vw;
+    background: white;
+    top: 50px;
+    left: 0;
+    padding: 20px 10px;
+
+    .article-wrapper {
+      gap: 60px;
+    }
+
+    article {
+      gap: 30px;
+
+      h1 {
+        font-size: 22px;
+      }
+
+      .slogan {
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+
+        br {
+          display: none;
+        }
+      }
+    }
+
+    .overview {
+      .info-title {
+        min-width: 80px;
+        font-weight: 700;
+      }
+
+      p {
+        font-weight: 400;
+      }
+
+      .info-box {
+        gap: 10px;
+        font-size: 12px;
+      }
+
+      .info-item {
+        br {
+          display: block;
+        }
+      }
+    }
+
+    .business-icon {
+      gap: 20px;
+
+      .icon-inner {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .business-item {
+        div:nth-child(1) {
+          gap: 15px;
+          padding-bottom: 10px;
+          border-bottom: none;
+
+          h3 {
+            font-size: 16px;
+            padding-bottom: 0px;
+          }
+        }
+
+        div:nth-child(2) {
+          padding-top: 0px;
+
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .solution,
+      .web,
+      .Mark-Median {
+        img {
+          width: 30px;
+        }
+      }
+
+      .mobile {
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
 }
