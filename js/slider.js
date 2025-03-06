@@ -1,15 +1,22 @@
 // ============== main slide ==================
 var mainSwiper = new Swiper(".main-swiper", {
     slidesPerView: 5,
-    direction: getDirection(),
+    direction: 'horizontal',
     mousewheel: true,
     scrollbar: {
         el: '.main-scrollbar',
         draggable: true,
     },
+
     on: {
-        resize: function () {
-            mainSwiper.changeDirection(getDirection());
+        breakpoint: function (swiper) {
+            swiper.changeDirection('horizontal');
+        }
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 3,
+            direction: 'horizontal'
         },
     },
 });

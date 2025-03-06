@@ -43,7 +43,42 @@
 
   .creamhouse-main {
     .container {
-      position: static;
+      top: 50px;
+      left: 0;
+    }
+
+    .main-swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          min-width: 255px;
+          padding: 10px;
+          gap: 10px;
+        }
+
+        h1 {
+          font-size: 40px;
+        }
+
+        .text_box {
+          gap: 10px;
+
+          h6 {
+            font-size: 14px;
+          }
+
+          h3 {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+
+        .date {
+          font-size: 11px;
+        }
+      }
     }
   }
 }
