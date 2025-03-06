@@ -1,5 +1,5 @@
 // ============== main slide ==================
-var mainSwiper = new Swiper(".main-swiper", {
+var mainSwiper = new Swiper(".main-slide", {
     slidesPerView: 5,
     direction: 'horizontal',
     mousewheel: true,
@@ -15,7 +15,7 @@ var mainSwiper = new Swiper(".main-swiper", {
     },
     breakpoints: {
         640: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             direction: 'horizontal'
         },
     },

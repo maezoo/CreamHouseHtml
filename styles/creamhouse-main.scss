@@ -1,21 +1,24 @@
 .creamhouse-main {
   .container {
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 277px;
   }
-  .main-swiper {
+
+  .main-slide {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 
     .swiper-wrapper {
       .swiper-slide {
+        min-height: 100vh;
         max-width: 400px;
-        height: 100%;
-        padding: 120px 30px;
         display: flex;
         flex-direction: column;
         gap: 20px;
+        padding: 120px 30px 60px;
         justify-content: flex-start;
         border-right: 1px solid #e8e8e8;
       }
@@ -112,8 +115,12 @@
       .date {
         font-size: 13px;
         font-weight: 300;
-        margin-top: 20px;
+        margin-top: 50px;
       }
     }
+  }
+  .main-scrollbar {
+    bottom: 10px;
+    height: 7px;
   }
 }
