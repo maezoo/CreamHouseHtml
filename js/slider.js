@@ -8,16 +8,16 @@ var mainSwiper = new Swiper(".main-slide", {
     scrollbar: {
         el: '.main-scrollbar',
         draggable: true,
+        hide: true,
     },
 
     breakpoints: {
         640: {
             slidesPerView: 2,
-            direction: 'horizontal',
             scrollbar: {
                 el: '.main-scrollbar',
                 draggable: true,
-                hide: true,
+                hide: false,
             },
             on: {
                 init: function (swiper) {
@@ -28,10 +28,11 @@ var mainSwiper = new Swiper(".main-slide", {
                 },
 
             }
-
         },
     },
+
 });
+
 
 // ============== project slide ==================
 var projectSwiper = new Swiper(".project-slide", {

@@ -16,12 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     mainSection.classList.add('show');
   }
 
-  // logo.addEventListener('click', () => {
-  //   sections.forEach(section => section.classList.remove('show'));
-  //   mainSection.classList.add('show');
-  //   sessionStorage.removeItem('activeTab');
-  // });
-
 
   logos.forEach(logo => {
     logo.addEventListener('click', () => {
