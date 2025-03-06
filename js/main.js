@@ -34,3 +34,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// ===================================
+// mobile
+// ===================================
+
+
+// 팝업 open /close ==========================
+const hamburger = document.querySelector('.mo-hamburger');
+const mobileMenu = document.querySelector('.mobile-menu');
+const closeBtn = document.querySelector('.close-x');
+const sideBar = document.querySelector('.side-menu');
+
+hamburger.addEventListener('click', () => {
+  mobileMenu.classList.toggle('show');
+  sideBar.classList.toggle('show');
+});
+
+closeBtn.addEventListener('click', () => {
+  mobileMenu.classList.remove('show');
+  sideBar.classList.remove('show');
+});

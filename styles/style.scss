@@ -70,3 +70,33 @@ main {
   height: 7px;
 }
 //  ======================= scroll-bar =======================
+
+.mobile-menu.show {
+  // opacity: 1;
+  visibility: visible;
+}
+
+.side-menu.show {
+  transition: transform 0.3s ease;
+  transform: translateX(0%);
+}
+
+// .tab-btn li.active {
+//   background-color: #005295;
+//   border-color: #005295;
+//   color: #fff;
+// }
+
+// .tab-btn img.show {
+//   animation: tabArrow 1s ease;
+// }
+
+// @keyframes tabArrow {
+//   from {
+//     transform: translateY(-10px);
+//   }
+
+//   to {
+//     transform: translateY(0px);
+//   }
+// }
