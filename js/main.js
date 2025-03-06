@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const logo = document.querySelector('.head-logo');
+  // const logo = document.querySelector('.head-logo');
+  const logos = document.querySelectorAll('.head-logo');
   const mainSection = document.querySelector('#main-page');
   const tabItems = document.querySelectorAll('.gnb-list');
   const sections = document.querySelectorAll('.gnb-item');
@@ -15,11 +16,22 @@ document.addEventListener('DOMContentLoaded', () => {
     mainSection.classList.add('show');
   }
 
-  logo.addEventListener('click', () => {
-    sections.forEach(section => section.classList.remove('show'));
-    mainSection.classList.add('show');
-    sessionStorage.removeItem('activeTab');
+  // logo.addEventListener('click', () => {
+  //   sections.forEach(section => section.classList.remove('show'));
+  //   mainSection.classList.add('show');
+  //   sessionStorage.removeItem('activeTab');
+  // });
+
+
+  logos.forEach(logo => {
+    logo.addEventListener('click', () => {
+      sections.forEach(section => section.classList.remove('show'));
+      mainSection.classList.add('show');
+      sessionStorage.removeItem('activeTab');
+    });
   });
+
+
 
   tabItems.forEach(tab => {
     tab.addEventListener('click', () => {
