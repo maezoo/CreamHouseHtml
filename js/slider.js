@@ -30,24 +30,43 @@ var mainSwiper = new Swiper(".main-slide", {
             }
         },
     },
-
 });
 
 
 // ============== project slide ==================
 var projectSwiper = new Swiper(".project-slide", {
     slidesPerView: 5,
-    direction: getDirection(),
-    mousewheel: true,
+    direction: 'horizontal',
+    freeMode: {
+        enabled: true,
+    },
     scrollbar: {
         el: '.project-scrollbar',
         draggable: true,
     },
-    on: {
-        resize: function () {
-            projectSwiper.changeDirection(getDirection());
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            scrollbar: {
+                el: '.project-scrollbar',
+                draggable: true,
+                hide: false,
+            },
+            on: {
+                init: function (swiper) {
+                    document.querySelector('.project-scrollbar').style.opacity = "0";
+                },
+                touchStart: function (swiper) {
+                    document.querySelector('.project-scrollbar').style.opacity = "1";
+                },
+            }
         },
     },
+    // on: {
+    //     resize: function () {
+    //         projectSwiper.changeDirection(getDirection());
+    //     },
+    // },
 });
 
 // ============== 공통 함수 =============

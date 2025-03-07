@@ -194,4 +194,50 @@
       display: block;
     }
   }
+
+  .project-inner {
+    top: 50px;
+    left: 0;
+
+    .project-slide {
+      .swiper-wrapper {
+        .swiper-slide {
+          min-height: calc(100vh - 100px);
+          min-width: 255px;
+          padding: 10px;
+          gap: 10px;
+        }
+
+        h1 {
+          font-size: 40px;
+        }
+
+        .text_box {
+          gap: 5px;
+
+          h3 {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+
+        .reference {
+          font-size: 11px;
+        }
+      }
+
+      .project-scrollbar {
+        // bottom: 55px;
+        transition: opacity 0.3s ease-out;
+        background-color: transparent;
+      }
+    }
+
+    .mo-footer {
+      display: block;
+    }
+  }
 }
