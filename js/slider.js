@@ -1,5 +1,6 @@
 // ============== main slide ==================
 var mainSwiper = new Swiper(".main-slide", {
+
     slidesPerView: 5,
     direction: 'horizontal',
     freeMode: {
@@ -7,7 +8,6 @@ var mainSwiper = new Swiper(".main-slide", {
     },
     scrollbar: {
         el: '.main-scrollbar',
-        draggable: true,
         hide: true,
     },
 

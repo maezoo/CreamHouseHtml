@@ -1,10 +1,9 @@
 .creamhouse-main {
   .container {
-    // width: 100vw;
-    // height: 100vh;
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 277px;
+    // width: 100vw;
   }
 
   .main-slide {
@@ -123,5 +122,6 @@
   .main-scrollbar {
     bottom: 10px;
     height: 5px;
+    transition: opacity 0.3s ease-out;
   }
 }

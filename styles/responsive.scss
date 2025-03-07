@@ -14,7 +14,7 @@
     height: 50px;
     border-bottom: 1px solid #e8e8e8;
     padding: 0 20px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
@@ -48,10 +48,9 @@
     }
 
     .main-slide {
-      height: calc(100vh - 50px);
-
       .swiper-wrapper {
         .swiper-slide {
+          min-height: calc(100vh - 100px);
           min-width: 255px;
           padding: 10px;
           gap: 10px;
@@ -85,9 +84,13 @@
     }
 
     .main-scrollbar {
-      bottom: 60px;
+      // bottom: 55px;
       transition: opacity 0.3s ease-out;
       background-color: transparent;
+    }
+
+    .mo-footer {
+      display: block;
     }
   }
 
@@ -186,9 +189,9 @@
         }
       }
     }
-  }
 
-  .mo-footer {
-    display: block;
+    .mo-footer {
+      display: block;
+    }
   }
 }
