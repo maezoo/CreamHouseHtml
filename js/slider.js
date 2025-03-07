@@ -1,6 +1,5 @@
 // ============== main slide ==================
 var mainSwiper = new Swiper(".main-slide", {
-
     slidesPerView: 5,
     direction: 'horizontal',
     freeMode: {
@@ -42,7 +41,7 @@ var projectSwiper = new Swiper(".project-slide", {
     },
     scrollbar: {
         el: '.project-scrollbar',
-        draggable: true,
+        hide: true,
     },
     breakpoints: {
         640: {
@@ -62,11 +61,7 @@ var projectSwiper = new Swiper(".project-slide", {
             }
         },
     },
-    // on: {
-    //     resize: function () {
-    //         projectSwiper.changeDirection(getDirection());
-    //     },
-    // },
+
 });
 
 // ============== 공통 함수 =============
